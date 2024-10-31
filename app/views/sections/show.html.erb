@@ -32,3 +32,11 @@
 
 <%= link_to 'Edit', edit_section_path(@section) %> |
 <%= link_to 'Back', sections_path %>
+
+<% if current_student %>
+  <% if current_student.sections.include?(@section) %>
+    <%= button_to "Withdraw from Section", withdraw_section_path(@section), method: :delete %>
+  <% else %>
+    <%= button_to "Enroll in Section", enroll_section_path(@section), method: :post %>
+  <% end %>
+<% end %>

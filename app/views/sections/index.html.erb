@@ -11,7 +11,7 @@
       <th>Start time</th>
       <th>End time</th>
       <th>Days of week</th>
-      <th colspan="3"></th>
+      <th colspan="4"></th>
     </tr>
   </thead>
 
@@ -27,6 +27,13 @@
         <td><%= link_to 'Show', section %></td>
         <td><%= link_to 'Edit', edit_section_path(section) %></td>
         <td><%= link_to 'Destroy', section, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <% if current_student %>
+          <% if current_student.sections.include?(section) %>
+            <td><%= link_to "Withdraw from Section", withdraw_section_path(section), method: :delete %></td>
+          <% else %>
+            <td><%= link_to "Enroll in Section", enroll_section_path(section), method: :post %></td>
+          <% end %>
+        <% end %>
       </tr>
     <% end %>
   </tbody>

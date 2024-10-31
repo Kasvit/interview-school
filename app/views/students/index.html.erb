@@ -13,7 +13,6 @@
         <td><%= student.full_name %></td>
         <td>
           <%= button_to "Login as #{student.full_name}", login_as_student_path(student), method: :post %>
-          <%= button_to "Show Schedule", student_path(student), method: :get %>
         </td>
       </tr>
     <% end %>

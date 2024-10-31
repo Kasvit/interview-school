@@ -1,7 +1,12 @@
 Rails.application.routes.draw do
   root to: 'subjects#index'
-  
-  resources :sections
+
+  resources :sections  do
+    member do
+      post 'enroll'
+      delete 'withdraw'
+    end
+  end
   resources :classrooms
   resources :teachers do
     resources :teacher_subjects, shallow: true

@@ -8,6 +8,7 @@
       <th>Start Time</th>
       <th>End Time</th>
       <th>Days of Week</th>
+      <th colspan="1"></th>
     </tr>
   </thead>
   <tbody>
@@ -18,6 +19,7 @@
         <td><%= section.start_time %></td>
         <td><%= section.end_time %></td>
         <td><%= section.days_of_week.join(", ") %></td>
+        <td><%= link_to "Withdraw from Section", withdraw_section_path(section), method: :delete %></td>
       </tr>
     <% end %>
   </tbody>

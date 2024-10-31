@@ -1,5 +1,5 @@
 class SectionsController < ApplicationController
-  before_action :set_section, only: %i[ show edit update destroy ]
+  before_action :set_section, only: %i[ show edit update destroy enroll withdraw ]
 
   # GET /sections or /sections.json
   def index
@@ -55,6 +55,28 @@ class SectionsController < ApplicationController
       format.html { redirect_to sections_path, status: :see_other, notice: "Section was successfully destroyed." }
       format.json { head :no_content }
     end
+  end
+
+  def enroll
+    student_section = StudentSection.new(student: current_student, section: @section)
+
+    if student_section.save
+      flash[:notice] = "Successfully enrolled in the section."
+      redirect_to student_path(current_student)
+    else
+      flash[:alert] = "Enrollment failed: #{student_section.errors.full_messages.to_sentence}"
+      redirect_to section_path(@section)
+    end
+  end
+
+  def withdraw
+    if current_student.sections.include?(@section)
+      current_student.sections.delete(@section)
+      flash[:notice] = "Successfully withdrew from the section."
+    else
+      flash[:alert] = "You're not enrolled in this section."
+    end
+    redirect_to @section
   end
 
   private
