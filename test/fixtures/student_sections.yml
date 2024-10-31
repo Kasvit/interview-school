@@ -20,10 +20,10 @@
 #  student_id  (student_id => students.id)
 #
 
-# one:
-#   student: one
-#   section: one
+one:
+  student: one
+  section: one
 
-# two:
-#   student: two
-#   section: two
+two:
+  student: two
+  section: two

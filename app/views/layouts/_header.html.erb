@@ -4,3 +4,6 @@
 <%= link_to 'Classrooms', classrooms_path %>
 <%= link_to 'Sections', sections_path %>
 <%= link_to 'Students', students_path %>
+<%- if current_student %>
+  <%= link_to 'My schedule', student_path(current_student) %>
+<% end %>

@@ -19,16 +19,15 @@ class Section < ApplicationRecord
   has_many :student_sections
   has_many :students, through: :student_sections
 
-  # serialize :days_of_week, JSON
+  serialize :days_of_week, JSON
   attribute :end_time, :time_only
   attribute :start_time, :time_only
 
-  # Validations
   validates :teacher_id, :subject_id, :classroom_id, :start_time, :end_time, presence: true
   validate :days_of_week_present
   validate :valid_days_of_week
   validate :validate_start_date
-  validate :valid_time_range
+  # validate :valid_time_range
   validate :time_within_operating_hours
 
   def on_day?(day)
