@@ -27,7 +27,7 @@ class Section < ApplicationRecord
   validate :days_of_week_present
   validate :valid_days_of_week
   validate :validate_start_date
-  # validate :valid_time_range
+  validate :valid_time_range
   validate :time_within_operating_hours
 
   def on_day?(day)
