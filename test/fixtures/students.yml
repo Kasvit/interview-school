@@ -15,11 +15,11 @@
 #
 
 one:
-  first_name: MyString
-  last_name: MyString
-  email: MyString
+  first_name: Johh
+  last_name: Dou
+  email: john@gmail.com
 
 two:
-  first_name: MyString
-  last_name: MyString
-  email: MyString
+  first_name: Naruto
+  last_name: Uzumaki
+  email: naruto@gmail.com

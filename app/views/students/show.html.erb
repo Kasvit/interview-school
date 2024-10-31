@@ -1,0 +1,24 @@
+<h1><%= @student.full_name %>'s Schedule</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Subject</th>
+      <th>Teacher</th>
+      <th>Start Time</th>
+      <th>End Time</th>
+      <th>Days of Week</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @schedule.each do |section| %>
+      <tr>
+        <td><%= section.subject.name %></td>
+        <td><%= section.teacher.first_and_last_name %></td>
+        <td><%= section.start_time %></td>
+        <td><%= section.end_time %></td>
+        <td><%= section.days_of_week.join(", ") %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

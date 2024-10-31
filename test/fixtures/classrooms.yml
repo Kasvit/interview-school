@@ -9,7 +9,7 @@
 #
 
 one:
-  room_number: MyString
+  room_number: '1'
 
 two:
-  room_number: MyString
+  room_number: '2'

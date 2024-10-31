@@ -28,12 +28,12 @@
 
   <div class="field">
     <%= form.label :start_time %>
-    <%= form.time_select :start_time %>
+    <%= form.time_select :start_time, ignore_date: true %>
   </div>
 
   <div class="field">
     <%= form.label :end_time %>
-    <%= form.time_select :end_time %>
+    <%= form.time_select :end_time, ignore_date: true %>
   </div>
 
   <div class="field">
