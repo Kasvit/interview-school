@@ -13,18 +13,18 @@
 #  teacher_id   :integer
 #
 
-one:
-  teacher_id: 1
-  subject_id: 1
-  classroom_id: 1
-  start_time: 2024-10-31 14:38:34
-  end_time: 2024-10-31 14:38:34
-  days_of_week: MyText
+# one:
+#   teacher_id: math_teacher
+#   subject_id: math
+#   classroom_id: one
+#   start_time: 2024-10-31 12:00:00
+#   end_time: 2024-10-31 12:50:00
+#   days_of_week: '["Monday", "Tuesday"]'
 
-two:
-  teacher_id: 1
-  subject_id: 1
-  classroom_id: 1
-  start_time: 2024-10-31 14:38:34
-  end_time: 2024-10-31 14:38:34
-  days_of_week: MyText
+# two:
+#   teacher_id: english_teacher
+#   subject_id: menglish
+#   classroom_id: two
+#   start_time: 2024-10-31 14:00:00
+#   end_time: 2024-10-31 15:20:00
+#   days_of_week: !ruby/array ["Friday"]
