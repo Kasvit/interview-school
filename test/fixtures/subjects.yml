@@ -1,3 +1,13 @@
+# == Schema Information
+#
+# Table name: subjects
+#
+#  id          :integer          not null, primary key
+#  description :text
+#  name        :string           not null
+#  created_at  :datetime         not null
+#  updated_at  :datetime         not null
+#
 math:
   name: Math
   description: All about numbers
@@ -8,3 +18,13 @@ english:
 
 subject_without_teacher:
   name: Subject without teacher
+
+ukrainian:
+  name: Ukrainian
+  description: Ukrainian Language
+
+oop:
+  name: Object oriented programming
+
+ror:
+  name: Ruby on Rails

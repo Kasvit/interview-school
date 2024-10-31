@@ -10,8 +10,7 @@
   </head>
 
   <body>
-    <%= link_to 'Classes', subjects_path %>
-    <%= link_to 'Teachers', teachers_path %>
+    <%= render partial: 'layouts/header' %>
     <br>
     <%= yield %>
   </body>

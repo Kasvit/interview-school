@@ -1,0 +1,15 @@
+# == Schema Information
+#
+# Table name: classrooms
+#
+#  id          :integer          not null, primary key
+#  room_number :string           not null
+#  created_at  :datetime         not null
+#  updated_at  :datetime         not null
+#
+
+one:
+  room_number: MyString
+
+two:
+  room_number: MyString

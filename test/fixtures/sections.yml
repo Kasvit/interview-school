@@ -1,0 +1,30 @@
+# == Schema Information
+#
+# Table name: sections
+#
+#  id           :integer          not null, primary key
+#  days_of_week :text             default([])
+#  end_time     :time
+#  start_time   :time
+#  created_at   :datetime         not null
+#  updated_at   :datetime         not null
+#  classroom_id :integer
+#  subject_id   :integer
+#  teacher_id   :integer
+#
+
+one:
+  teacher_id: 1
+  subject_id: 1
+  classroom_id: 1
+  start_time: 2024-10-31 14:38:34
+  end_time: 2024-10-31 14:38:34
+  days_of_week: MyText
+
+two:
+  teacher_id: 1
+  subject_id: 1
+  classroom_id: 1
+  start_time: 2024-10-31 14:38:34
+  end_time: 2024-10-31 14:38:34
+  days_of_week: MyText
