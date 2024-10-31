@@ -1,3 +1,13 @@
+# == Schema Information
+#
+# Table name: teachers
+#
+#  id         :integer          not null, primary key
+#  first_name :string           not null
+#  last_name  :string           not null
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
+#
 math_teacher:
   first_name: Math
   last_name: Teacher
@@ -13,3 +23,11 @@ math_and_english_teacher:
 teacher_without_subjects:
   first_name: Teacher without Subject
   last_name: Still learning
+
+ukrainian_teacher:
+  first_name: Taras
+  last_name: Shevchenko
+
+ror_teacher:
+  first_name: Vitalii
+  last_name: K
