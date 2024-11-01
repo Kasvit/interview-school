@@ -13,6 +13,8 @@ gem 'jbuilder', '~> 2.7'
 gem 'bootsnap', '>= 1.4.2', require: false
 gem 'bootstrap', '~> 5.0'
 gem 'tod'
+gem 'prawn'
+gem 'prawn-table'
 
 group :development, :test do
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
