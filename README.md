@@ -19,3 +19,12 @@ Do not spend more than 4 hours implementing the goals above. It's not mandatory 
 
 Thank you [Dusan Orlovic](https://blog.trk.in.rs/) for your work in building this
 
+
+## Results
+I realized all the required features in around 4 hours.
+On the other hand, I did it without specs, only manually tried and tested.
+So in possible ToDo:
+- write specs (with Rspec)
+- improve UI
+- add users, devise, admin panel, etc.
+- update rails version, use Stimulus, Tailwind.
