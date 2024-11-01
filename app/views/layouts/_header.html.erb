@@ -6,4 +6,5 @@
 <%= link_to 'Students', students_path %>
 <%- if current_student %>
   <%= link_to 'My schedule', student_path(current_student) %>
+  <%= link_to "Log Out", logout_as_student_path, method: :post, class: "btn btn-danger" %>
 <% end %>

@@ -1,5 +1,7 @@
 <h1><%= @student.full_name %>'s Schedule</h1>
 
+<%= link_to 'Download PDF of Schedule', download_schedule_student_path(@student), target: "_blank", class: 'btn btn-primary' %>
+
 <table>
   <thead>
     <tr>
